@@ -16,6 +16,7 @@ class Student {
 	}
 	public void displayGPA() {
 		System.out.println("Student name is: " + name+ " "+"age is:" + " "+age +" and GPA: "+ GPA);
+		
 	}
 	
 }
@@ -25,7 +26,7 @@ public class StudentMarks {
 		Student s1=new Student("Venky",20,6.8);
 		Student s2=new Student("Sasi",22);
 		s1.displayGPA();
-		s2.displayGPA();
+	
 	}
 
 }
