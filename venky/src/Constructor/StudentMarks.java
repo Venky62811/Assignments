@@ -26,7 +26,7 @@ public class StudentMarks {
 		Student s1=new Student("Venky",20,6.8);
 		Student s2=new Student("Sasi",22);
 		s1.displayGPA();
-	
+		s2.displayGPA();
 	}
 
 }
