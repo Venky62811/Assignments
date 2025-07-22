@@ -4,9 +4,8 @@ public class NestedeTernaryOperator {
 
 	public static void main(String[] args) {
 		boolean isLoggedin = true;
-		String 	userType =  "creator";
-		String subscriptionStatus ="expired";
-		
+		String 	userType =  "viewer";
+		String subscriptionStatus ="active";
 		String message = !isLoggedin ? "Please log in to continue"
                 : userType.equals("admin") ? "Welcome, Admin"
                 : userType.equals("creator") && subscriptionStatus.equals("active") ? "Creator Dashboard"
@@ -14,9 +13,6 @@ public class NestedeTernaryOperator {
                 : userType.equals("viewer") && subscriptionStatus.equals("active") ? "Continue Watching"
                 : userType.equals("viewer") && subscriptionStatus.equals("expired") ? "Subscription expired"
                 : "Access Denied";
-		
-		System.out.println("Homepage : "+message);
-
+		System.out.println("Homepage is : "+message);
 	}
-
 }
